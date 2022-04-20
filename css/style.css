@@ -1,0 +1,608 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+:root
+{
+    --mypink :#FC6F52;
+    --myp:#8B8A8A;
+}
+*
+{
+    box-sizing: border-box;
+}
+ul
+{
+    list-style: none;
+}
+a , a:hover
+{
+    text-decoration: none;
+    color: inherit;
+}
+p
+{
+    color: var(--myp);
+}
+
+/********************************************************************/
+
+nav
+{
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+nav .nav-nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-nav i
+{
+    font-size: 20px;
+    color: #888888;
+    border:1px solid #888888;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav .nav-nav i:hover
+{
+    background-color: #DDD;
+}
+nav ul
+{
+    padding: 10px 0 10px 20px;
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    width: 100%;
+
+}
+nav ul li
+{
+    margin-bottom: 10px;
+}
+nav ul li a
+{
+    color: #474747;
+    letter-spacing: 2px;
+}
+nav ul li a:hover
+{
+    color: var(--mypink);
+}
+/**********************************************************************/
+/**********************************************************************/
+header
+{
+    background: linear-gradient(rgba(0,0,0,.6) , rgba(0,0,0,.6)) , url('../images/landing.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    color: #fff;
+    position: relative;
+}
+header div
+{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+header div p
+{
+    margin: 40px 0;
+    color: #fFF;
+}
+header div a
+{
+    background-color: transparent;
+    border: 2px solid #FFF;
+    padding: 10px 15px;
+    color: #FFF;
+    display: inline-block;
+}
+/**********************************************************************/
+/**********************************************************************/
+.sec1 , .sec2 ,.sec3
+{
+    text-align: center;
+    padding: 100px 0;
+}
+.sec1 .container>h2,
+.sec3 .container>h2
+{
+    font-size: 25px;
+    color: rgb(60, 58, 58);
+}
+.sec1 .container>h1
+{
+    font-size: 35px;
+    font-weight: 400;
+    margin: 20px;
+    color: rgb(100, 94, 94);
+}
+.sec1 .container>hr,
+.sec2 .container>hr,
+.sec3 .container>hr
+{
+    width: 100px;
+    font-size: 20px;
+    border-top: 2px solid #DDD;
+    color: #DDD;
+}
+.sec1 .container>p,
+.sec3 .container>p
+{
+    margin-top: 20px;
+}
+.sec1 article 
+{
+    margin-top: 100px;
+}
+.sec1 article figure
+{
+    margin-bottom: 70px;
+}
+.sec1 article i
+{
+    color: var(--mypink);
+    font-size: 35px;
+}
+.sec1 article h5
+{
+    margin: 20px;
+    color: #202122;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/*************************************************************************/
+/*************************************************************************/
+
+.sec2 .container>h2
+{
+    margin-bottom: 20px;  
+}
+.sec2 .container>p
+{
+    margin-top: 20px;  
+}
+.sec2 article
+{
+    margin-top: 100px;
+}
+.sec2 article figure:first-of-type>div ,
+.sec2 article figure:last-of-type>div
+{
+    display: flex;
+    text-align: left;
+    margin-top: 20px;
+} 
+
+.sec2 article figure:first-of-type>div div:first-of-type i ,
+.sec2 article figure:last-of-type>div div:first-of-type i
+{
+    margin-right: 30px;
+    font-size: 30px;
+    color: var(--mypink);
+   
+}
+.sec2 article figure:nth-of-type(2) img
+{
+    width: 100%;
+}
+/**********************************************************************/
+/**********************************************************************/
+.sec3 article
+{
+    margin-top: 50px;
+}
+.sec3 article figure 
+{
+    position: relative;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.sec3 article figure>div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 100px 20px;
+    background-color: rgb(255, 255, 255,.9) ;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: all 5s;
+}
+.sec3 article figure:hover >div
+{
+    display: block;
+    transition: all 5s;
+}
+.sec3 article figure>div p:first-of-type
+{
+    margin: 20px 0 50px 0;
+}
+
+.sec3 article figure>div .team-soaial
+{
+    margin-top: 50px;
+}
+.sec3 article figure>div .team-soaial a
+{
+    margin-right: 25px;
+}
+.sec3 article figure img
+{
+    width: 100%;
+}
+
+/********************************************************************/
+/********************************************************************/
+.sec4
+{
+    padding: 50px 0;
+}
+.sec4 article h4
+{
+    margin-bottom: 20px;
+}
+.sec4 figure .sec4-skills
+{
+    margin-bottom: 25px;
+}
+.sec4 figure .sec4-skills p
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.sec4 figure .sec4-skills>div
+{
+    position: relative;
+    background-color: #DDD;
+    width: 100%;
+    height: 5px;
+}
+.sec4 figure div:first-of-type>div div
+{
+    position: absolute;
+    background-color: #000;
+    height: 5px;
+    width: 75%;
+}
+.sec4 figure div:nth-of-type(2)>div div
+{
+    position: absolute;
+    background-color: #000;
+    height: 5px;
+    width: 95%;
+}
+.sec4 figure div:nth-of-type(3)>div div
+{
+    position: absolute;
+    background-color: #000;
+    height: 5px;
+    width: 85%;
+}
+.sec4 figure div:nth-of-type(4)>div div
+{
+    position: absolute;
+    background-color: #000;
+    height: 5px;
+    width: 73%;
+}
+/***************************************************************/
+/***************************************************************/
+.sec5
+{
+    background: linear-gradient(rgba(0,0,0,.8) , rgba(0,0,0,.8)) , url('../images/clients-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFF;
+    text-align: center;
+    padding: 70px 0;
+}
+.sec5 article p
+{
+    margin: 25px 0;
+    color: #fff;
+}
+.sec5 article
+{
+    margin-bottom: 50px;
+}
+.sec5 article a
+{
+    background-color: transparent;
+    border: 2px solid #FFF;
+    padding: 10px 15px;
+    color: #FFF;
+    display: inline-block;
+}
+.sec5 figure img
+{
+    width: 100%;
+}
+
+/***************************************************************/
+/***************************************************************/
+
+.sec6
+{
+    padding: 100px 0;
+}
+.sec6 article p
+{
+    margin: 30px 0;
+}
+.sec6 article a
+{
+    background-color: var(--mypink);
+    border: 2px solid #FFF;
+    padding: 10px 20px;
+    color: #FFF;
+    display: inline-block;
+}
+.sec6 article a:hover
+{
+    background-color: #000;
+}
+/***************************************************************/
+/***************************************************************/
+.sec7
+{
+    background: linear-gradient(rgba(0,0,0,.8) , rgba(0,0,0,.8)) , url('../images/clients-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+.sec7 figure
+{
+    display: flex;
+    justify-content: space-between;
+}
+.sec7 figure img
+{
+    width: 10%;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+.sec7 figure img:hover
+{
+    opacity: .6;
+}
+/***************************************************************/
+/***************************************************************/
+.sec8
+{
+    padding: 100px 0;
+    text-align: center;
+}
+.sec8 hr
+{
+    width: 50px;
+    border: 2px solid #DDD;
+}
+.sec8 p
+{
+    margin-top: 30px;
+}
+.sec8 form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.sec8 form input ,
+.sec8 form textarea
+{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    border-bottom: 1px solid #DDd;
+    margin-bottom: 25px;
+    resize: none;
+}
+.sec8 form input[type='submit']
+{
+    background-color: var(--mypink);
+    border: 2px solid #FFF;
+    padding: 10px 20px;
+    color: #FFF;
+    display: inline-block;
+}
+
+/****************************************************************************/
+/****************************************************************************/
+footer
+{
+    padding: 70px 0;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+footer ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+footer ul li a:hover
+{
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--mypink);
+}
+footer p
+{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+
+@media (min-width: 576px) {
+    
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    nav ul
+    {
+        display: block !important;
+        padding: 0;
+        margin-top: 10px;
+        width: auto;
+        position: static;
+    }
+    nav .nav-nav i
+    {
+        display: none;
+    }
+    nav .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li
+    {
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    .sec1 article
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec1 article figure
+    {
+        margin: 0;
+        width: 32%;
+    }
+    .sec2 article
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec2 article figure
+    {
+        width: 32%;
+    }
+    .sec2 article figure:first-of-type>div ,
+    .sec2 article figure:last-of-type>div
+    {
+        margin-top: 0;
+    }
+    .sec3 article
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec3 article figure
+    {
+        margin: 0;
+        width: 32%;
+    }
+    .sec3 article figure>div
+    {
+
+        padding: 0px 20px;
+
+    }
+    .sec4 .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec4 article,
+    .sec4 figure
+    {
+        width: 49%;
+    }
+    .sec5 .container
+    {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+    }
+    .sec5 article,
+    .sec5 figure
+    {
+        width: 49%;
+        margin: 0;
+    }
+    .sec5 figure
+    {
+        margin-top: -100px;
+    }
+    .sec5 figure img
+    {
+        width: 90%;
+    }
+    .sec6
+    {
+        padding: 100px;
+    }
+    .sec6 .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec6 figure,
+    .sec6 article
+    {
+        width: 49%;
+    }
+    .sec6 article h4
+    {
+        font-size: 40px;
+    }
+   .sec8 form
+   {
+       width: 60%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .sec3 article figure>div
+    {
+        padding: 70px 20px;
+    }
+}
